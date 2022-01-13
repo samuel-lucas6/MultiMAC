@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiMAC", "MultiMAC\MultiMAC.csproj", "{18FDE9A1-0A17-4A75-90C6-BD0ECE9BA3EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18FDE9A1-0A17-4A75-90C6-BD0ECE9BA3EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18FDE9A1-0A17-4A75-90C6-BD0ECE9BA3EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18FDE9A1-0A17-4A75-90C6-BD0ECE9BA3EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18FDE9A1-0A17-4A75-90C6-BD0ECE9BA3EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

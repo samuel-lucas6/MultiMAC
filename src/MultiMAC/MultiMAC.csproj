@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <Description>Authenticate multiple inputs easily.</Description>
+        <Copyright>Copyright (c) 2022 Samuel Lucas</Copyright>
+        <Authors>Samuel Lucas</Authors>
+        <EnableNETAnalyzers>true</EnableNETAnalyzers>
+        <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+        <RootNamespace>MultiMAC</RootNamespace>
+        <AssemblyName>MultiMAC</AssemblyName>
+        <Version>1.0.0</Version>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+        <PackageProjectUrl>https://github.com/samuel-lucas6/MultiMAC</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/samuel-lucas6/MultiMAC</RepositoryUrl>
+        <ErrorReport>none</ErrorReport>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>cryptography;crypto;mac;message authentication code;keyed hash;authenticate;authentication;blake2;blake2b;keyed blake2;keyed blake2b;blake2 mac</PackageTags>
+        <AnalysisLevel>latest</AnalysisLevel>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Sodium.Core" Version="1.2.3" />
+    </ItemGroup>
+
+</Project>
