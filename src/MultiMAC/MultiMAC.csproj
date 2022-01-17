@@ -10,7 +10,7 @@
         <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
         <RootNamespace>MultiMAC</RootNamespace>
         <AssemblyName>MultiMAC</AssemblyName>
-        <Version>1.0.1</Version>
+        <Version>1.0.2</Version>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
         <PackageProjectUrl>https://github.com/samuel-lucas6/MultiMAC</PackageProjectUrl>

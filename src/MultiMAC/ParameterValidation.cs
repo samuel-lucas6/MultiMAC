@@ -27,16 +27,17 @@ internal static class ParameterValidation
 {
     internal static void Key(byte[] key, int validKeyLength)
     {
-        if (key == null) { throw new ArgumentNullException(nameof(key), "The keys cannot be null."); }
-        if (key.Length != validKeyLength) { throw new ArgumentOutOfRangeException(nameof(key), key.Length, $"The keys must be {validKeyLength} bytes in length."); }
+        if (key == null) { throw new ArgumentNullException(nameof(key), "Neither key can be null."); }
+        if (key.Length != validKeyLength) { throw new ArgumentOutOfRangeException(nameof(key), key.Length, $"Both keys must be {validKeyLength} bytes in length."); }
     }
     
     internal static void Inputs(params byte[][] inputs)
     {
+        if (inputs == null) { throw new ArgumentNullException(nameof(inputs), "The input cannot be null."); }
         foreach (var input in inputs)
         {
-            if (input == null) { throw new ArgumentNullException(nameof(input), "The inputs cannot be null."); }
-            if (input.Length == 0) { throw new ArgumentOutOfRangeException(nameof(input), "The inputs cannot be empty."); }
+            if (input == null) { throw new ArgumentNullException(nameof(input), "None of the inputs can be null."); }
+            if (input.Length == 0) { throw new ArgumentOutOfRangeException(nameof(input), "None of the inputs can be empty."); }
         }
     }
     
