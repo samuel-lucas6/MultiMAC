@@ -40,9 +40,9 @@ internal static class ParameterValidation
         }
     }
     
-    internal static void Tag(byte[] tag, int validTagLength)
+    internal static void Tag(byte[] tag)
     {
         if (tag == null) { throw new ArgumentNullException(nameof(tag), "The tag cannot be null."); }
-        if (tag.Length != validTagLength) { throw new ArgumentOutOfRangeException(nameof(tag), tag.Length, $"The tag must be {validTagLength} bytes in length."); }
+        if (tag.Length != (int)TagLength.BLAKE2b256 & tag.Length != (int)TagLength.BLAKE2b384 & tag.Length != (int)TagLength.BLAKE2b512) { throw new ArgumentOutOfRangeException(nameof(tag), tag.Length, $"The tag must be {(int)TagLength.BLAKE2b256}, {(int)TagLength.BLAKE2b384}, or {(int)TagLength.BLAKE2b512} bytes in length."); }
     }
 }

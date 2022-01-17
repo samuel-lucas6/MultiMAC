@@ -43,7 +43,7 @@ public static class MultiMac
     
     public static bool Verify(byte[] tag, byte[] key1, byte[] key2, params byte[][] inputs)
     {
-        ParameterValidation.Tag(tag, tag?.Length ?? 0);
+        ParameterValidation.Tag(tag);
         byte[] computedTag = Compute(key1, key2, (TagLength)tag.Length, inputs);
         return Utilities.Compare(tag, computedTag);
     }
