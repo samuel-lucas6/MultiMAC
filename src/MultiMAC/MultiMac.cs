@@ -1,5 +1,5 @@
 ﻿/*
-    MultiMAC: Authenticate multiple inputs easily.
+    MultiMAC: Authenticate multiple inputs easily using keyed BLAKE2b.
     Copyright (c) 2022 Samuel Lucas
     
     Permission is hereby granted, free of charge, to any person obtaining a copy of
@@ -44,9 +44,6 @@ public static class MultiMac
     public static bool Verify(byte[] tag, byte[] key1, byte[] key2, params byte[][] inputs)
     {
         ParameterValidation.Tag(tag, tag?.Length ?? 0);
-        ParameterValidation.Key(key1, tag.Length);
-        ParameterValidation.Key(key2, tag.Length);
-        ParameterValidation.Inputs(inputs);
         byte[] computedTag = Compute(key1, key2, (TagLength)tag.Length, inputs);
         return Utilities.Compare(tag, computedTag);
     }

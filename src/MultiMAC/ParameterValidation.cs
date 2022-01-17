@@ -1,5 +1,5 @@
 ﻿/*
-    MultiMAC: Authenticate multiple inputs easily.
+    MultiMAC: Authenticate multiple inputs easily using keyed BLAKE2b.
     Copyright (c) 2022 Samuel Lucas
     
     Permission is hereby granted, free of charge, to any person obtaining a copy of
