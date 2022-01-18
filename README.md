@@ -7,6 +7,12 @@ Authenticate multiple inputs easily using keyed BLAKE2b in [libsodium](https://d
 The [standard](https://github.com/samuel-lucas6/Cryptography-Guidelines#notes-2) way of [safely](https://soatok.blog/2021/07/30/canonicalization-attacks-against-macs-and-signatures/) computing a MAC for multiple inputs requires worrying about concatenating arrays and converting the length of each array to a fixed number of bytes, such as 4 bytes to represent an integer, consistently in either big- or little-endian, regardless of the endianness of the machine. This is annoying to implement and possibly less efficient than the following approach [discussed](https://neilmadden.blog/2021/10/27/multiple-input-macs/) by [Neil Madden](https://neilmadden.blog/), author of [API Security in Action](https://www.manning.com/books/api-security-in-action?a_aid=api_security_in_action).
 
 ## Installation
+### NuGet
+You can find the NuGet package [here](https://www.nuget.org/packages/MultiMAC).
+
+The easiest way to install this is via the NuGet Package Manager in [Visual Studio](https://visualstudio.microsoft.com/vs/), as explained [here](https://docs.microsoft.com/en-us/nuget/quickstart/install-and-use-a-package-in-visual-studio). [JetBrains Rider](https://www.jetbrains.com/rider/) also has a package manager, and instructions can be found [here](https://www.jetbrains.com/help/rider/Using_NuGet.html).
+
+### Manual
 1. Install the [Sodium.Core](https://www.nuget.org/packages/Sodium.Core) NuGet package in [Visual Studio](https://docs.microsoft.com/en-us/nuget/quickstart/install-and-use-a-package-in-visual-studio).
 2. Download the latest [release](https://github.com/samuel-lucas6/MultiMAC/releases/latest).
 3. Move the downloaded `.dll` file into your Visual Studio project folder.
