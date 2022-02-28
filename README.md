@@ -58,7 +58,7 @@ The following benchmarks were done using [BenchmarkDotNet](https://benchmarkdotn
 
 In sum, the MultiMAC cascade approach is noticeably faster for large inputs, slightly faster for medium inputs, and slower for very small inputs. It is also significantly easier and safer to use, which suggests it should be offered in cryptographic libraries.
 
-### 512 bytes
+### 512-byte file
 |     Method |     Mean |   Error |  StdDev |
 |:----------:|:--------:|:-------:|:-------:|
 | BLAKE2b256 | 646.3 ns | 0.77 ns | 0.68 ns |
@@ -68,7 +68,7 @@ In sum, the MultiMAC cascade approach is noticeably faster for large inputs, sli
 | MultiMAC-BLAKE2b384 | 1.024 us | 0.0036 us | 0.0033 us |
 | MultiMAC-BLAKE2b512 | 1.031 us | 0.0062 us | 0.0058 us |
 
-### 16 KiB
+### 16 KiB file
 |     Method |     Mean |   Error |  StdDev |
 |:----------:|:--------:|:-------:|:-------:|
 | BLAKE2b256 | 12.18 us | 0.055 us | 0.046 us |
@@ -78,7 +78,7 @@ In sum, the MultiMAC cascade approach is noticeably faster for large inputs, sli
 | MultiMAC-BLAKE2b384 | 11.43 us | 0.018 us | 0.015 us |
 | MultiMAC-BLAKE2b512 | 11.71 us | 0.043 us | 0.033 us |
 
-### 32 KiB
+### 32 KiB file
 |     Method |     Mean |   Error |  StdDev |
 |:----------:|:--------:|:-------:|:-------:|
 | BLAKE2b256 | 23.70 us | 0.120 us | 0.107 us |
@@ -88,19 +88,17 @@ In sum, the MultiMAC cascade approach is noticeably faster for large inputs, sli
 | MultiMAC-BLAKE2b384 | 22.26 us | 0.116 us | 0.103 us |
 | MultiMAC-BLAKE2b512 | 22.26 us | 0.087 us | 0.073 us |
 
-### 64 KiB
+### 64 KiB file
 |     Method |     Mean |   Error |  StdDev |
 |:----------:|:--------:|:-------:|:-------:|
 | BLAKE2b256 | 47.03 us | 0.056 us | 0.044 us |
 | BLAKE2b384 | 47.87 us | 0.207 us | 0.193 us |
 | BLAKE2b512 | 47.08 us | 0.112 us | 0.099 us |
-|           Method |     Mean |    Error |   StdDev |
-|----------------- |---------:|---------:|---------:|
 | MultiMAC-BLAKE2b256 | 43.73 us | 0.029 us | 0.025 us |
 | MultiMAC-BLAKE2b384 | 43.91 us | 0.174 us | 0.163 us |
 | MultiMAC-BLAKE2b512 | 43.92 us | 0.193 us | 0.181 us |
 
-### 128 KiB
+### 128 KiB file
 |     Method |     Mean |   Error |  StdDev |
 |:----------:|:--------:|:-------:|:-------:|
 | BLAKE2b256 | 144.7 us | 1.20 us | 1.12 us |
@@ -110,7 +108,7 @@ In sum, the MultiMAC cascade approach is noticeably faster for large inputs, sli
 | MultiMAC-BLAKE2b384 | 86.78 us | 0.101 us | 0.094 us |
 | MultiMAC-BLAKE2b512 | 86.90 us | 0.228 us | 0.202 us |
 
-### 32 MiB
+### 32 MiB file
 |     Method |     Mean |   Error |  StdDev |
 |:----------:|:--------:|:-------:|:-------:|
 | BLAKE2b256 | 34.50 ms | 0.561 ms | 0.524 ms |
